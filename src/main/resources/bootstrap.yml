@@ -1,0 +1,11 @@
+management:
+  security:
+    enabled: false
+server:
+  port: 8085
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+  application:
+    name: client_config
