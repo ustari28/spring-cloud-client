@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SprinCloudConfigClientApplication {
 
-	@RequestMapping("/")
-	public String home(@Value("${config.values}") String value) {
-		return "Hello World! " + value;
+	@RequestMapping("/home")
+	public String home(@Value("${test.app.name}") String value) {
+		return "Hello World-> " + value;
 	}
 
 	public static void main(String[] args) {

@@ -7,5 +7,9 @@ spring:
   cloud:
     config:
       uri: http://localhost:8888
+      label: develop
+      version: 1.0
   application:
-    name: client_config
+    name: mysmartercv
+  profiles:
+    active: develop
